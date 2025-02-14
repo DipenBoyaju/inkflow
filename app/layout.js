@@ -1,4 +1,4 @@
-import { Outfit } from "next/font/google";
+import { Outfit, Silkscreen } from "next/font/google";
 import "./globals.css";
 
 
@@ -6,6 +6,11 @@ const outfit = Outfit({
   subsets: ['latin'],
   weight: ["400", "500", "600", "700"]
 })
+
+export const silkscreen = Silkscreen({
+  subsets: ['latin'],
+  weight: ["400", "700"]
+});
 
 export const metadata = {
   title: "InkFlow",
