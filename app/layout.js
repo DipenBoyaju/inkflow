@@ -1,5 +1,7 @@
 import { Outfit, Silkscreen } from "next/font/google";
 import "./globals.css";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 
 const outfit = Outfit({
@@ -23,7 +25,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.className} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
